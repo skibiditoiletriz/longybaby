@@ -1,0 +1,28 @@
+local Workspace =
+game:GetService("Workspace")
+local Long Neck =
+Workspace.Ignore.LocalCharacter.Botto
+m.PrismaticConstraint
+local DrRayLibrary =
+loadstring(game:HttpGet("https://
+raw.githubusercontent.com/AZYsGithub/
+DrRay-Ul-Library/main/DrRay.lua"))()
+
+local Long NeckProxy = {}
+local neckSize = 8.3
+local isEnabled = false
+
+setmetatable(LongNeckProxy, {
+ __index = function(_, key)
+   if key == "LowerLimit" then
+      return isEnabled and neckSize or
+1.649999976158142
+    elseif key == "UpperLimit" then
+      return isEnabled and neckSize or 3
+    else
+      return Long Neck[key]
+    end
+ end,
+___newindex = function(_, key, value)
+  if key == "LowerLimit" or key ==
+"UpperLimit" then
